@@ -1,8 +1,9 @@
 # solution_with_patterns/tests/test_key_sorter.py
 
 import unittest
+from test.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_ORDERED_DATA
+
 from classes.key_sorter import KeySorter
-from test.constants_for_test import SAMPLE_ORDERED_DATA, SAMPLE_INPUT_DATA
 
 
 class TestKeySorter(unittest.TestCase):

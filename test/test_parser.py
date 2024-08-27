@@ -1,7 +1,12 @@
+from test.constants_for_test import (
+    ORIGINAL_INPUT,
+    ORIGINAL_OUTPUT,
+    SAMPLE_FINAL_DATA,
+    SAMPLE_INPUT_DATA,
+)
 from unittest import TestCase
 
 from main import parser
-from test.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_FINAL_DATA, ORIGINAL_INPUT, ORIGINAL_OUTPUT
 
 
 class TestParser(TestCase):
@@ -14,4 +19,3 @@ class TestParser(TestCase):
         actual = parser(ORIGINAL_INPUT)
         expected = ORIGINAL_OUTPUT
         self.assertEqual(expected, actual)
-

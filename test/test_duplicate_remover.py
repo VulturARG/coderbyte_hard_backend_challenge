@@ -1,9 +1,9 @@
 # solution_with_patterns/tests/test_duplicate_remover.py
 
 import unittest
-from classes.duplicate_remover import DuplicateRemover
-
 from test.constants_for_test import SAMPLE_DUPLICATE_REMOVED, SAMPLE_ORDERED_DATA
+
+from classes.duplicate_remover import DuplicateRemover
 
 
 class TestDuplicateRemover(unittest.TestCase):
@@ -32,5 +32,3 @@ class TestDuplicateRemover(unittest.TestCase):
         actual = self.remover.remove_duplicates(SAMPLE_ORDERED_DATA)
         expected = SAMPLE_DUPLICATE_REMOVED
         self.assertEqual(expected, actual)
-
-

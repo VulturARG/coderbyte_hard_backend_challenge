@@ -1,8 +1,7 @@
-
 import unittest
+from test.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_INPUT_JSON
 
 from classes.json_handler import JsonHandler
-from test.constants_for_test import SAMPLE_INPUT_JSON, SAMPLE_INPUT_DATA
 
 
 class TestJsonHandler(unittest.TestCase):
@@ -19,4 +18,3 @@ class TestJsonHandler(unittest.TestCase):
         expected = SAMPLE_INPUT_DATA
         actual = self.handler.from_json(json_str)
         self.assertEqual(expected, actual)
-
