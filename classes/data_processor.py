@@ -6,7 +6,9 @@ class DataProcessor(ABC):
 
     def process(self, data):
         data_type_map = self._map_type()
-        callable_type = data_type_map.get((isinstance(data, list), isinstance(data, dict)), self._process_default)
+        callable_type = data_type_map.get(
+            (isinstance(data, list), isinstance(data, dict)), self._process_default
+        )
         return callable_type(data)
 
     def _map_type(self) -> dict[tuple[bool, bool], Callable]:

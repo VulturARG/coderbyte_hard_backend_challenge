@@ -1,12 +1,17 @@
 from json import dumps
 from unittest import TestCase
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 from main import main
-from tests.constants_for_test import SAMPLE_INPUT_JSON, SAMPLE_FINAL_DATA, ORIGINAL_JSON_INPUT, ORIGINAL_OUTPUT
+from tests.constants_for_test import (
+    ORIGINAL_JSON_INPUT,
+    ORIGINAL_OUTPUT,
+    SAMPLE_FINAL_DATA,
+    SAMPLE_INPUT_JSON,
+)
 
 
-@patch('main.DataFetcher')
+@patch("main.DataFetcher")
 class TestIntegration(TestCase):
     def test_integration_sample_data(self, mock_data_fetcher: MagicMock):
         expected = dumps(SAMPLE_FINAL_DATA)

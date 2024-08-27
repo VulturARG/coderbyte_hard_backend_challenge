@@ -6,4 +6,7 @@ class KeySorter(DataProcessor):
         return [self.process(item) for item in data]
 
     def _process_dict(self, data):
-        return {k: self.process(v) for k, v in sorted(data.items(), key=lambda item: item[0].lower())}
+        return {
+            k: self.process(v)
+            for k, v in sorted(data.items(), key=lambda item: item[0].lower())
+        }

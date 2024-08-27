@@ -1,6 +1,6 @@
 import unittest
-from classes.cleaner import Cleaner
 
+from classes.cleaner import Cleaner
 from tests.constants_for_test import SAMPLE_CLEANED, SAMPLE_DUPLICATE_REMOVED
 
 
@@ -16,7 +16,7 @@ class TestCleaner(unittest.TestCase):
 
     def test_clean_dict(self):
         data = {"a": 1, "b": "", "c": None, "d": [], "e": {}, "f": 2}
-        expected = {'a': 1, 'e': {}, 'f': 2}
+        expected = {"a": 1, "e": {}, "f": 2}
         actual = self.cleaner.process(data)
         self.assertEqual(expected, actual)
 
@@ -30,10 +30,9 @@ class TestCleaner(unittest.TestCase):
         actual = self.cleaner.process(SAMPLE_DUPLICATE_REMOVED)
         expected = SAMPLE_CLEANED
         self.assertEqual(expected, actual)
-        
+
     def test_clean_empty_list(self):
         data = [{"name": "John", "affiliations": ["", "", ""]}]
         expected = [{"name": "John"}]
         actual = self.cleaner.process(data)
         self.assertEqual(expected, actual)
-
