@@ -1,4 +1,7 @@
 # Coderbyte Back-end Challenge
+
+## Using Template Method pattern
+
 In the Python file, you have a program that performs a GET request on the route https://coderbyte.com/api/challenges/json/date-list and then sort the object keys alphabetically. However, the sorting should be case-insensitive, and the original data structure should be preserved (e.g., lists should remain lists, dictionaries should remain dictionaries). Keep in mind that while the JSON format uses null, in Python, this is represented as None.
 
 Next, remove any duplicate dictionaries from lists. Two dictionaries are considered duplicates if they have the same keys and values in the same order. Only the first occurrence should be preserved when an list contains duplicate dictionaries.
