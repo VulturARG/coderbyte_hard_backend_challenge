@@ -3,7 +3,7 @@
 import unittest
 from classes.duplicate_remover import DuplicateRemover
 
-from test.constants_for_test import SAMPLE_DUPLICATE_REMOVED, SAMPLE_ORDERED_DATA
+from tests.constants_for_test import SAMPLE_DUPLICATE_REMOVED, SAMPLE_ORDERED_DATA
 
 
 class TestDuplicateRemover(unittest.TestCase):

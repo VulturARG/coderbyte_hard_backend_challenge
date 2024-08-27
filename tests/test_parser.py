@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from main import parser
-from test.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_FINAL_DATA, ORIGINAL_INPUT, ORIGINAL_OUTPUT
+from tests.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_FINAL_DATA, ORIGINAL_INPUT, ORIGINAL_OUTPUT
 
 
 class TestParser(TestCase):

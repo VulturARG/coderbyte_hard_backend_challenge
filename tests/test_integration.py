@@ -3,7 +3,7 @@ from unittest import TestCase
 from unittest.mock import patch, MagicMock
 
 from main import main
-from test.constants_for_test import SAMPLE_INPUT_JSON, SAMPLE_FINAL_DATA, ORIGINAL_JSON_INPUT, ORIGINAL_OUTPUT
+from tests.constants_for_test import SAMPLE_INPUT_JSON, SAMPLE_FINAL_DATA, ORIGINAL_JSON_INPUT, ORIGINAL_OUTPUT
 
 
 @patch('main.DataFetcher')

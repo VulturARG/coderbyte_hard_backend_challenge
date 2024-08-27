@@ -2,7 +2,7 @@
 
 import unittest
 from classes.key_sorter import KeySorter
-from test.constants_for_test import SAMPLE_ORDERED_DATA, SAMPLE_INPUT_DATA
+from tests.constants_for_test import SAMPLE_ORDERED_DATA, SAMPLE_INPUT_DATA
 
 
 class TestKeySorter(unittest.TestCase):

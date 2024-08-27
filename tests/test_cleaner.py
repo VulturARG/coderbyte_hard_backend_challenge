@@ -1,7 +1,7 @@
 import unittest
 from classes.cleaner import Cleaner
 
-from test.constants_for_test import SAMPLE_CLEANED, SAMPLE_DUPLICATE_REMOVED
+from tests.constants_for_test import SAMPLE_CLEANED, SAMPLE_DUPLICATE_REMOVED
 
 
 class TestCleaner(unittest.TestCase):
