@@ -15,7 +15,7 @@ def gateway() -> str:
 
 def parser(data: list[dict[str, Any]]) -> list[dict[str, Any]]:
     key_sorter = KeySorter()
-    sorted_data = key_sorter.sort_keys(data)
+    sorted_data = key_sorter.process(data)
 
     duplicate_remover = DuplicateRemover()
     unique_data = duplicate_remover.process(sorted_data)
