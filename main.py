@@ -21,7 +21,7 @@ def parser(data: list[dict[str, Any]]) -> list[dict[str, Any]]:
     unique_data = duplicate_remover.remove_duplicates(sorted_data)
 
     cleaner = Cleaner()
-    return cleaner.clean(unique_data)
+    return cleaner.process(unique_data)
 
 
 def main() -> str:
