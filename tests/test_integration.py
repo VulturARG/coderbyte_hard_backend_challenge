@@ -1,14 +1,14 @@
 from json import dumps
-from test.constants_for_test import (
+from unittest import TestCase
+from unittest.mock import MagicMock, patch
+
+from main import main
+from tests.constants_for_test import (
     ORIGINAL_JSON_INPUT,
     ORIGINAL_OUTPUT,
     SAMPLE_FINAL_DATA,
     SAMPLE_INPUT_JSON,
 )
-from unittest import TestCase
-from unittest.mock import MagicMock, patch
-
-from main import main
 
 
 @patch("main.DataFetcher")

@@ -1,12 +1,12 @@
-from test.constants_for_test import (
+from unittest import TestCase
+
+from main import parser
+from tests.constants_for_test import (
     ORIGINAL_INPUT,
     ORIGINAL_OUTPUT,
     SAMPLE_FINAL_DATA,
     SAMPLE_INPUT_DATA,
 )
-from unittest import TestCase
-
-from main import parser
 
 
 class TestParser(TestCase):

@@ -1,7 +1,7 @@
 import unittest
-from test.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_INPUT_JSON
 
 from classes.json_handler import JsonHandler
+from tests.constants_for_test import SAMPLE_INPUT_DATA, SAMPLE_INPUT_JSON
 
 
 class TestJsonHandler(unittest.TestCase):
